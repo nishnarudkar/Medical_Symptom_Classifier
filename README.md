@@ -1,57 +1,94 @@
-# Medical_Symptom_Classifier
+# Medical Symptom Classifier
 
-This project demonstrates a simple yet powerful conversational agent using LangGraph, which extends LangChain for building stateful, multi-step language agents as graphs.
+A conversational AI agent for medical symptom classification, leveraging LangGraph (an extension of LangChain) to build a stateful, multi-step reasoning system. This project demonstrates how to structure complex agent flows, integrate external tools, and optionally provide a web-based chatbot interface.
 
-✨ Features
-Multi-step agent graph: Uses LangGraph to define a flow where an agent and a user interact in a loop until a final answer is generated.
+---
 
-Tool integration: Supports tools such as a calculator (via serpapi or similar approach) to enhance responses.
+## ✨ Features
 
-Dynamic state tracking: Maintains and updates conversation state using a graph node system.
+- **Multi-step Agent Graph:** Uses LangGraph to define a conversational loop between agent and user, enabling complex reasoning and clarification.
+- **Tool Integration:** Supports integration with calculators (via SerpAPI or similar), enhancing the agent’s capabilities.
+- **Dynamic State Tracking:** Maintains and updates conversation state using a graph node system for robust multi-turn interactions.
+- **Streamlit UI (Optional):** Easily connect with Streamlit to offer a web-based chatbot interface.
 
-Streamlit UI (optional): Can be easily integrated with Streamlit for a web-based chatbot interface.
+---
 
-🚀 How It Works
-1️⃣ The agent node uses an LLM (here, OpenAI) to plan actions and optionally call tools.
-2️⃣ The user node takes the intermediate agent outputs, displays them, and feeds them back into the agent until completion.
-3️⃣ The graph continues until the agent indicates it has a final answer.
+## 🚀 How It Works
 
-📄 Notebook Overview
-The notebook covers:
+1. **Agent Node:** Utilizes an LLM (e.g., OpenAI) to plan actions, generate responses, and optionally call integrated tools.
+2. **User Node:** Displays intermediate outputs and feeds user/agent responses back into the agent until a final answer is reached.
+3. **Graph Execution:** The flow continues in a loop until the agent indicates the conversation is complete or a final answer is generated.
 
-Setting up an OpenAI model and tool definitions.
+---
 
-Creating a graph with LangGraph to handle interaction flow.
+## 📓 Notebook Overview
 
-Managing state and controlling transitions.
+The included Jupyter Notebook covers:
 
-Running and testing the graph step by step.
+- Setting up the OpenAI model and tool integrations.
+- Creating a LangGraph-based conversational flow.
+- Managing dynamic state and controlling transitions between steps.
+- Running and testing the multi-step reasoning agent.
 
-🧰 Requirements
-bash
-Copy
-Edit
+---
+
+## 🧰 Requirements
+
+Install the dependencies with:
+
+```bash
 pip install langgraph langchain openai streamlit
-You may also need keys for OpenAI (and optionally for SerpAPI or other tools).
+```
 
-⚙️ Usage
+- You will need API keys for OpenAI (and optionally SerpAPI or other tools).
+
+---
+
+## ⚙️ Usage
+
+**In Python:**
+
+```python
 import openai
 import langgraph
-# Load your agent and graph
-# Then run as shown in the notebook
+# Load your agent and graph according to the notebook or your script
+# Run the graph to start the conversational agent
+```
 
-Or simply run the Jupyter Notebook:
+**Or use the provided Jupyter Notebook:**
+
+```bash
 jupyter notebook Nishant_langgraph.ipynb
+```
 
-📷 Screenshots
-💡 You can add screenshots or GIFs of the graph outputs or chatbot interface here.
 
-🤝 Contributing
-Contributions are welcome! Please open issues or submit PRs for improvements.
+## 📷 Screenshots
 
-📄 License
-MIT License
+Add screenshots or GIFs of the chatbot interface or graph outputs here to demonstrate functionality.
 
-⭐ Show some ❤️
-If you find this project helpful, please ⭐ star the repository!
+---
 
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues or submit PRs for suggestions and improvements.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## ⭐ Show Your Support
+
+If you found this project helpful, please consider starring ⭐ the repository!
+
+---
+
+**Contact:**  
+For questions or support, please open an issue on GitHub.
+
+---
+
+Let me know if you want sections on FAQ, troubleshooting, or example conversations!
