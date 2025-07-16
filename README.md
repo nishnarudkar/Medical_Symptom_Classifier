@@ -62,7 +62,7 @@ Follow the notebook steps to:
 
 ## 📷 Screenshots
 
-Screenshot 2025-07-16 061056.png
+![Description of screenshot](https://github.com/nishnarudkar/Medical_Symptom_Classifier/raw/main/Screenshot%202025-07-16%20061056.png)
 
 ---
 
