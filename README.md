@@ -62,7 +62,7 @@ Follow the notebook steps to:
 
 ## 📷 Screenshots
 
-Add screenshots or GIFs of the chatbot interface or graph outputs here to demonstrate functionality.
+Screenshot 2025-07-16 061056.png
 
 ---
 
